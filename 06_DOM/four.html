@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | PART-4</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //this is how you 'add' values    
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("typescript")
+    /*this method is not optimize, bczzz when we use innerHTML, and when
+      we add new element, then it traverse the whole tree again and again */
+
+
+    //appendChild is more optimize approach
+    function addOptiLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }  
+    addOptiLanguage('golang')
+
+    //----------------------------------------------------------------------
+
+    //this is how you 'Edit' value
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "Mojo"   //not optimized approach for large values
+    
+    //yaha pe new element  banake hi daal diya
+    const newli = document.createElement('li')  //optimized approach for large values
+    newli.textContent = "Mojo"          //yaha pe values dete hai
+    secondLang.replaceWith(newli)       //And becozzz of this execute hota hai 
+
+
+    //Edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Typescript</li>'   //Javascript ki jagh Typescript
+
+    //----------------------------------------------------------------------------
+    //remove element
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()            //it will remove golang
+    
+</script>
+</html>

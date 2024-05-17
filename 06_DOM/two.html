@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);                     
+    // console.log(parent.children[1].innerHTML);     //output=> tuesday (in browser console)
+
+    //for loop
+    // for (let i = 0; i < parent.children.length; i++) {
+    //      console.log(parent.children[i].innerHTML);   //monday tuesday wednesday thursday(in browser console) | 
+    //     //                                              you have to comment-out the console.log used before or else
+    //     //                                              the days will come random not in mon,tue,wed format
+        
+    // }
+    parent.children[1].style.color = "orange"
+    // console.log(parent.firstElementChild);      //output=> Monday   (innme parent se child move hua)  
+    // console.log(parent.lastElementChild);       //output=> Thursday (innme parent se child move hua)  
+    
+    //child se parent ese move karte hai
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);      //output=> <div class="day" style="color: orange;">Tuesday</div>
+
+    console.log("NODES: ", parent.childNodes);      //(1.16 hours node list) //output=> NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
+</script>
+</html>
