@@ -69,7 +69,7 @@ Welcome to my JavaScript notes repository! This collection contains my personal 
 
 Certainly! Here are the notes for the Introduction section:
 
-## Introduction
+# Introduction
 
 Welcome to my JavaScript notes repository! This collection contains my personal notes, code snippets, and explanations on various JavaScript concepts and features.
 
@@ -165,11 +165,11 @@ Variables are fundamental in programming because they allow us to store and mani
 ---
 
 
-## Data Types
+# Data Types
 
 Data types are the kinds of values that can be stored in variables. JavaScript has several data types, and they can be categorized into two main groups: primitive types and reference types.
 
-### Primitive Types
+## Primitive Types
 
 Primitive types are the most basic data types. They are immutable, meaning their values cannot be changed. There are six primitive data types in JavaScript:
 
@@ -244,7 +244,7 @@ BigInt is used for very large integers beyond the safe limit for numbers (`Numbe
 let bigNumber = 123456789012345678901234567890n;
 ```
 
-### Reference Types
+## Reference Types
 
 Reference types are objects, which can store collections of data and more complex entities. Objects are mutable, meaning their values can be changed.
 
@@ -290,9 +290,9 @@ Understanding these data types is crucial for effective programming in JavaScrip
 
 ---
 
-Certainly! Let's delve into the different types of operators in JavaScript:
+Let's delve into the different types of operators in JavaScript:
 
-## Operators
+# Operators
 
 Operators are special symbols or keywords that perform operations on values and variables. JavaScript supports various types of operators.
 
@@ -518,11 +518,11 @@ Understanding these operators and how they work is essential for writing efficie
 
 [🔝 Back to top](#table-of-contents)
 
-Feel free to ask if you need further details or examples!
+
 
 ---
 
-## Control Structures
+# Control Structures
 
 ### Conditionals
 
