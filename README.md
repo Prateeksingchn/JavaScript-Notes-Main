@@ -164,7 +164,6 @@ Variables are fundamental in programming because they allow us to store and mani
 
 ---
 
-Sure! Let's explore JavaScript data types in detail:
 
 ## Data Types
 
@@ -289,7 +288,7 @@ Understanding these data types is crucial for effective programming in JavaScrip
 
 [🔝 Back to top](#table-of-contents)
 
-Feel free to ask if you need further details or examples!
+---
 
 ### Operators
 
