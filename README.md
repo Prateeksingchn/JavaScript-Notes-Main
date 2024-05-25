@@ -67,6 +67,7 @@ Welcome to my JavaScript notes repository! This collection contains my personal 
 
 ---
 
+<<<<<<< HEAD
 Certainly! Here are the notes for the Introduction section:
 
 ## Introduction
@@ -164,6 +165,23 @@ Variables are fundamental in programming because they allow us to store and mani
 
 ---
 
+=======
+## Introduction
+
+This repository contains a comprehensive collection of notes on JavaScript, covering fundamental concepts to more advanced topics. Whether you're a beginner looking to learn JavaScript or an experienced developer seeking a reference, you'll find useful information here.
+
+[🔝 Back to top](#table-of-contents)
+
+## Basic Concepts
+
+### Variables
+
+- `var`, `let`, `const`
+- Scope and hoisting
+
+[🔝 Back to top](#table-of-contents)
+
+>>>>>>> 7bda72cccb9e512c535ecc3858d16b074128d28c
 ### Data Types
 
 #### Primitive Types
