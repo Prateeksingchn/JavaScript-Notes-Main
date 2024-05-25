@@ -170,7 +170,7 @@ Sure! Let's explore JavaScript data types in detail:
 
 Data types are the kinds of values that can be stored in variables. JavaScript has several data types, and they can be categorized into two main groups: primitive types and reference types.
 
-### Primitive Types
+### I. Primitive Types
 
 Primitive types are the most basic data types. They are immutable, meaning their values cannot be changed. There are six primitive data types in JavaScript:
 
@@ -245,7 +245,7 @@ BigInt is used for very large integers beyond the safe limit for numbers (`Numbe
 let bigNumber = 123456789012345678901234567890n;
 ```
 
-### Reference Types
+### II. Reference Types
 
 Reference types are objects, which can store collections of data and more complex entities. Objects are mutable, meaning their values can be changed.
 
