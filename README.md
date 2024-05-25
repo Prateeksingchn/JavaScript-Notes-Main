@@ -164,19 +164,132 @@ Variables are fundamental in programming because they allow us to store and mani
 
 ---
 
-### Data Types
+Sure! Let's explore JavaScript data types in detail:
 
-#### Primitive Types
+## Data Types
 
-- `string`, `number`, `boolean`, `null`, `undefined`, `symbol`, `bigint`
+Data types are the kinds of values that can be stored in variables. JavaScript has several data types, and they can be categorized into two main groups: primitive types and reference types.
+
+### Primitive Types
+
+Primitive types are the most basic data types. They are immutable, meaning their values cannot be changed. There are six primitive data types in JavaScript:
+
+1. **String**
+2. **Number**
+3. **Boolean**
+4. **Null**
+5. **Undefined**
+6. **Symbol**
+7. **BigInt** (added in ES2020)
+
+#### String
+
+Strings are used to represent text. They are written inside quotes (single, double, or backticks).
+
+```javascript
+let name = "John"; // Double quotes
+let greeting = 'Hello'; // Single quotes
+let template = `Hi, ${name}!`; // Backticks for template literals
+```
+
+#### Number
+
+Numbers represent numeric values. JavaScript has only one type of number (no separate types for integers and floats).
+
+```javascript
+let age = 25; // Integer
+let price = 19.99; // Floating-point number
+```
+
+#### Boolean
+
+Booleans represent logical values: `true` or `false`.
+
+```javascript
+let isAdult = true;
+let hasPermission = false;
+```
+
+#### Null
+
+Null is a special value representing "no value" or "empty value." It's explicitly set by the programmer.
+
+```javascript
+let emptyValue = null;
+```
+
+#### Undefined
+
+Undefined means a variable has been declared, but not yet assigned a value.
+
+```javascript
+let notAssigned;
+console.log(notAssigned); // undefined
+```
+
+#### Symbol
+
+Symbols are unique and immutable values often used to identify object properties uniquely.
+
+```javascript
+let symbol1 = Symbol('description');
+let symbol2 = Symbol('description');
+console.log(symbol1 === symbol2); // false
+```
+
+#### BigInt
+
+BigInt is used for very large integers beyond the safe limit for numbers (`Number.MAX_SAFE_INTEGER`).
+
+```javascript
+let bigNumber = 123456789012345678901234567890n;
+```
+
+### Reference Types
+
+Reference types are objects, which can store collections of data and more complex entities. Objects are mutable, meaning their values can be changed.
+
+#### Objects
+
+Objects are collections of key-value pairs. Keys are strings (or Symbols), and values can be any data type.
+
+```javascript
+let person = {
+  name: "Alice",
+  age: 30,
+  isEmployed: true
+};
+```
+
+#### Arrays
+
+Arrays are ordered collections of values, which can be of any data type.
+
+```javascript
+let colors = ["red", "green", "blue"];
+```
+
+### Type Checking
+
+To check the type of a variable, you can use the `typeof` operator.
+
+```javascript
+console.log(typeof "Hello"); // "string"
+console.log(typeof 42); // "number"
+console.log(typeof true); // "boolean"
+console.log(typeof null); // "object" (this is a known quirk in JavaScript)
+console.log(typeof undefined); // "undefined"
+console.log(typeof Symbol('id')); // "symbol"
+console.log(typeof 123456789012345678901234567890n); // "bigint"
+console.log(typeof {name: "John"}); // "object"
+console.log(Array.isArray([1, 2, 3])); // true (for arrays specifically)
+```
+
+Understanding these data types is crucial for effective programming in JavaScript, as it helps you choose the right type for your data and use it correctly.
 
 [🔝 Back to top](#table-of-contents)
 
-#### Reference Types
-
-- Objects, Arrays, Functions
-
-[🔝 Back to top](#table-of-contents)
+Feel free to ask if you need further details or examples!
 
 ### Operators
 
